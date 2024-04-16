@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.458);
+}
+.container{
+    height: 100vh;
+    display:flex ;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    cursor: pointer;
+}
+/*-------------------------- side-cloumns------------------------------ */
+
+.cloumn-side{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    opacity: 0.2;
+}
+.cloumn-right{
+    align-items: flex-end;
+}
+.collorfull{
+    flex-grow: 1;
+    animation: rainbow 5s both infinite;
+    animation-direction: alternate;
+}
+@keyframes rainbow {
+    0%{width: 0%;};
+    50%{width: 50%;}
+    100%{width: 100%;};
+}
+/*-------------------------boxes---------------------------------- */
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: orange;
+}
+.box3{
+    background-color: yellow;
+}
+.box4{
+    background-color: green;
+}
+.box5{
+    background-color: blue;
+}
+.box6{
+    background-color: purple;
+}
+
+/*--------------------midle cloumn----------------------------------*/
+
+.cloumn-middle{
+    flex-basis: 50%;
+    transition: all 3s;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 2px 22px -1px rgba(15, 15, 15, 0.989);
+    z-index: 1;
+}
+.middle{
+    height: 33.3%;
+    display:flex;
+}
+ /* ------middle-up------- */
+.cards{
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 70px;
+}
+.card{
+    color: aliceblue;
+    flex-grow: 1;
+    width: 33.3%;
+    background-color: black;
+}
+.card:nth-child(odd){
+    opacity: 0.6;
+}
+.card:nth-child(even){
+    opacity: 0.3;
+}
+.card:hover{
+    transform: rotateY(180deg);
+    background-color: aliceblue;
+}
+
+
+ /* --------middle-middle--------- */
+
+
+.counter{
+    background-color: azure;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    box-shadow: 0 0 20px -1px rgb(6, 6, 6);
+}
+.number{
+    font-size: 50px ;
+}
+.increasebtn ,.resetbtn ,.decreasebtn {
+    font-weight: bold;
+    padding: 5px 20px;
+    background-color: inherit;
+    border-radius: 10% ;
+}
+
+.increasebtn{
+    border: 2px solid green;
+}
+
+.resetbtn{
+    border: 2px solid gray;
+}
+
+.decreasebtn{
+    border: 2px solid red;
+} 
+
+
+/*-----------middle-down --------*/ 
+
+.random-color{
+    flex-direction: column;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+.randomBtn{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10%;
+    margin-top: 25px;
+    padding: 10px;
+    opacity: 0.5;
+}
+button:hover{
+    background-color: lightgray;
+}
