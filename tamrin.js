@@ -3,7 +3,7 @@ let card = document.querySelectorAll('.card');
 for (let i = 0; i < card.length; i++) {
     card[i].addEventListener('touchstart',handler);
     function handler(event){
-        event.backgroundColor='aliceblue';
+        event.backgroundColor='gold';
     }
 }
 //-------------------------- counter-projhect
