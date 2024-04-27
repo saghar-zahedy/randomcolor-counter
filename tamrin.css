@@ -14,6 +14,9 @@ body{
     justify-content: center;
     cursor: pointer;
 }
+h1{
+    text-align: center;
+}
 /*-------------------------- side-cloumns------------------------------ */
 
 .cloumn-side{
@@ -59,7 +62,6 @@ body{
 /*--------------------midle cloumn----------------------------------*/
 
 .cloumn-middle{
-    flex-basis: 50%;
     transition: all 3s;
     display: flex;
     flex-direction: column;
@@ -67,7 +69,7 @@ body{
     z-index: 1;
 }
 .middle{
-    height: 33.3%;
+    height: 33.33%;
     display:flex;
 }
  /* ------middle-up------- */
@@ -98,6 +100,7 @@ body{
 
 
 .counter{
+    display: flex;
     background-color: azure;
     flex-direction: column;
     justify-content: space-around;
@@ -107,6 +110,10 @@ body{
 }
 .number{
     font-size: 50px ;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
 }
 .increasebtn ,.resetbtn ,.decreasebtn {
     font-weight: bold;
@@ -147,4 +154,8 @@ body{
 }
 button:hover{
     background-color: lightgray;
+}
+/*responsive*/
+@media screen and (min-width:700px) {
+    .buttons{flex-direction: row;}
 }
